@@ -1,0 +1,53 @@
+<!--Inspired by CaiYiLiang(github)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<title>Vue TodoList</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+</head>
+<body>
+    <section class="todolist">
+    <header class="title">
+    	Todo List
+    </header>
+    <section id="todoApp" class="todoApp">
+    	<div >
+    	    <!--HTML5:autofocus,autocomplete-->
+    	    <!--Vue.js Form input binding:v-model-->
+    	    <!--Vue.js Event handling:v-on-->
+    	    <!--Vue.js Mustache data-->
+    		<input class="input-todo" type="text" 
+    		placeholder="Pls enter your to-do item.."
+    		autofocus autocomplete="off"
+    		v-model = "input"
+    		@keyup.enter="addTodoItem(input)"> 
+    		<div class="input-preview">{{ input }}</div>
+    	</div>
+        
+        <div>
+        <ul class="todo-item">
+            <!--Vue.js Conditional Rendering:v-on-->
+        	<li v-for="todo in todos" 
+        	 v-show="todos.length">
+        	<div class="todo">
+            <span>{{ todo }}</span>
+        	<button @click="completeTodoItem(todo)">Complete</button>
+        	<button @click="removeTodoItem(todo)">
+        	Delete</button>
+            <div>
+        	</li>
+        </ul>	
+        </div>
+
+    </section>
+    </section>
+    <footer></footer>
+   
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	<script src="js/main.js"></script>
+    
+</body>
+</html>

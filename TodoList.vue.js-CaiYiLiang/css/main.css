@@ -1,0 +1,90 @@
+/**Inspired by CaiYiLiang(github)**/
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Mirza');
+
+body{
+	background:#92e0bd;
+	font-size: 20px;
+	text-align: center;
+
+}
+
+.todolist{
+    width: 70%;
+    /*min-height: 300px;*/
+    border-radius: 5px;
+    margin:5% auto;
+    padding: 10px;
+}
+
+.title{
+   font-size: 50px;
+   font-weight: 3;
+   font-family: 'Indie Flower', cursive;
+}
+
+
+.input-todo{
+	width: 80%;
+    height: 28px;
+    margin-top: 5px;
+    font-size: 20px;
+    font-family: 'Mirza', cursive;
+}
+
+.input-preview{
+	margin:5px 0;
+	padding-left: 10%;
+	text-align: left;
+    max-width: 80%;
+	height: 25px;
+	font-size: 25px;
+	word-break: break-all;
+}
+
+.todo-item{
+    list-style: none;
+    padding-left: 10%;
+	text-align: left;
+}
+
+
+.todo-item .todo{
+	/*border: 1px red solid;*/
+	margin-bottom: 18px;
+	width: 90%;
+}
+
+.todo-item .todo span, .todo-item .todo button{
+	display: inline-block;
+}
+
+.todo-item .todo span{
+	width: 70%;
+	min-height: 15px;
+	padding-bottom: 3px;
+	/*border: 1px black solid;*/
+	border-bottom:thick dotted #fff;
+	word-break: break-all;
+}
+
+
+.todo-item .todo button{
+	width: 63px;
+	height: 25px;
+	margin:3px 2px;
+	float: right;
+	text-align: center;
+	border: none;
+	background-color: rgba(242, 128, 135, 0.96);
+	color: #fff;
+	border-radius: 5px;
+	cursor:pointer;
+}
+
+.todo-item .todo button:hover{
+	font-family: 'Indie Flower', cursive;
+	font-size: 15px;
+}
+
+/*width 800px*/
