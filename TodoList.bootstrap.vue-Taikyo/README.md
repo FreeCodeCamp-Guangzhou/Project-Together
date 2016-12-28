@@ -1,5 +1,5 @@
 # Todo List
-### 用Bootstrap和Vue写的ToDoList
+### 用Bootstrap和Vue写的TodoList
 #### 功能拆解
 ```
 已完成功能
