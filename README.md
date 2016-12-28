@@ -12,6 +12,7 @@ pull request前注意：
 [CaiYiLiang(樱桃妹)的github](https://github.com/CaiYiLiang)
 
 [domsgit](https://github.com/domsgit)
+[taikyo](https://github.com/taikyo)
 
 [您的github名](您的github地址)
 
