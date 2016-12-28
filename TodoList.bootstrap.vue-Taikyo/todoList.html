@@ -15,6 +15,7 @@
             <h1 class="text-center">Todos</h1>
             <div id="app">
                 <!-- 使用v-model将newTodo与input输入的值相互绑定，这样将可以使得输入的值赋给newTodo -->
+                <!-- 使用v-on来绑定回车的敲击事件 -->
                 <input type="text" class="form-control"
                     placeholder="What needs to be done?"
                     v-model='newTodo'
@@ -23,8 +24,11 @@
 
                         <li v-for="todo in todos">
                             <div class="view">
+                            <!-- 使用v-model来绑定todo的isFinsh属性，用于动态的改变isFinsh的值 -->
                             <input type="checkbox" v-model="todo.isFinsh"
                             @click="toggleItem(todo)">
+                                <!--通过v-bind绑定class，使其能动态的改变页面的style  -->
+                                <!-- 下面的dbclick是双击编辑的入口，目前尚未实现函数功能 -->
                                 <label id="title" :class="{finshed : todo.isFinsh}" 
                                 @dblclick="editTodo">{{todo.title}}</label>
                                 <button type="button" class="close " @click="removeTodo(todo)"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
