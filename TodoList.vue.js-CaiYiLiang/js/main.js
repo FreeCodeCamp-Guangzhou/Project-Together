@@ -2,7 +2,6 @@
 
 //Use HTML5 Local Storage to restore date
 var STORAGEKEY = "TODOLISTKEY";
-var STORAGEKEYID = 0;
 var todolist = getLocalStorage();
 
 /*
@@ -11,13 +10,8 @@ var todolist = getLocalStorage();
 */
 function getLocalStorage(){
 	if(localStorage.getItem(STORAGEKEY)!==null){
-	  console.log("getLocalStorage ");
-	  console.log(typeof localStorage.getItem(STORAGEKEY));
-	  console.log(localStorage.getItem(STORAGEKEY));
-	  console.log("todolist ");
-	  console.log(localStorage.getItem(STORAGEKEY).split(","));
 	  //the localStorage will return a string 
-	  return localStorage.getItem(STORAGEKEY).split(",");
+	  return JSON.parse(localStorage.getItem(STORAGEKEY));
 	}
 	else return [];
 }
@@ -30,7 +24,8 @@ var todoApp = new Vue({
 	//declare the variables
 	data:{ 
 		input:"",
-		iscomplete:false,
+		isComplete:false,
+		index:0,
 		todos:todolist
 	},
 
@@ -45,9 +40,12 @@ var todoApp = new Vue({
 		   if(!inputContent){return;}
 		   //save user's input
 		   //data:todos refresh automatically
-           todolist.push(inputContent); 
-           console.log(todolist);
-           localStorage.setItem("TODOLISTKEY", todolist);
+           //todolist.push(inputContent); 
+           todolist.push({
+                content:inputContent,
+                isComplete:false
+           }); 
+           localStorage.setItem("TODOLISTKEY", JSON.stringify(todolist));
            //clear up the input bar
            this.input=" "; 
            
@@ -61,11 +59,8 @@ var todoApp = new Vue({
 		removeTodoItem:function(todoItem){
 			//remove according item and todolist refresh
             todolist.forEach(function(element,index){
-            	console.log("removeTodoItem.."+index);
-            	console.log(element);
-                if(todoItem===element){
-                  console.log("removeTodoItem..ing"+index);
-                  console.log(todolist);
+                if(todoItem===element.content){
+                  this.index--;
                   todolist.splice(index,1);
 
                 }
@@ -73,7 +68,7 @@ var todoApp = new Vue({
             });
 
             if(todolist.length!==0){
-               localStorage.setItem("TODOLISTKEY", todolist);
+               localStorage.setItem("TODOLISTKEY", JSON.stringify(todolist));
             }
             else {
                localStorage.removeItem("TODOLISTKEY");
@@ -84,6 +79,23 @@ var todoApp = new Vue({
             console.log(localStorage.TODOLISTKEY);
             console.log("removeTodoItem: " + "current todolist");
             console.log(this.todos);
+		},
+
+		completeTodoItem:function(todoItem){
+			//debug
+            // console.log("completeTodoItem:");
+            // console.log(todoItem);
+            // console.log(todolist[todoIndex-1]);
+            todolist.forEach(function(element,index){
+	        	// console.log("removeTodoItem.."+index);
+	        	// console.log(element);
+                if(todoItem===element.content){
+                 todolist[index].isComplete = true;
+                 localStorage.setItem("TODOLISTKEY", JSON.stringify(todolist));
+                }
+                
+            });
+            
 		}
 
 	}

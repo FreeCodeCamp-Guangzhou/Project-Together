@@ -7,6 +7,8 @@
 	<title>Vue TodoList</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="author" content="CaiYiLiang(github)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <section class="todolist">
@@ -28,14 +30,15 @@
     	</div>
         
         <div>
-        <ul class="todo-item">
+        <ul class="todo-item" v-cloak>
             <!--Vue.js Conditional Rendering:v-on-->
         	<li v-for="todo in todos" 
-        	 v-show="todos.length">
+        	 v-show="todos.length" :key="todo.content">
         	<div class="todo">
-            <span>{{ todo }}</span>
-        	<button @click="completeTodoItem(todo)">Complete</button>
-        	<button @click="removeTodoItem(todo)">
+            <span :class="{ complete: todo.isComplete }"
+            >{{ todo.content }}</span>
+        	<button @click="completeTodoItem(todo.content)">Complete</button>
+        	<button @click="removeTodoItem(todo.content)">
         	Delete</button>
             <div>
         	</li>
@@ -44,7 +47,13 @@
 
     </section>
     </section>
-    <footer></footer>
+    <footer>
+        <div class="ribbon">
+        <span class="ribbon-content">BY <a href="https://github.com/CaiYiLiang">CaiYiLiang</a><br>
+        Pull request , improve together :)
+        </span>
+       </div>
+    </footer>
    
 	<script src="https://unpkg.com/vue/dist/vue.js"></script>
 	<script src="js/main.js"></script>

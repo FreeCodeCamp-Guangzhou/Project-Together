@@ -2,11 +2,13 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 @import url('https://fonts.googleapis.com/css?family=Mirza');
 
+/*vue*/
+[v-cloak] { display: none; }
+
 body{
 	background:#92e0bd;
 	font-size: 20px;
 	text-align: center;
-
 }
 
 .todolist{
@@ -65,7 +67,9 @@ body{
 	padding-bottom: 3px;
 	/*border: 1px black solid;*/
 	border-bottom:thick dotted #fff;
+	/*CSS3 attribute*/
 	word-break: break-all;
+	text-indent:5px;
 }
 
 
@@ -87,4 +91,112 @@ body{
 	font-size: 15px;
 }
 
-/*width 800px*/
+.todo-item .complete {
+	text-decoration: line-through;
+	font-style:italic;
+	color: #cf9393;
+}
+
+footer{
+	position: absolute;
+	bottom: 3px;
+	left:25%;
+	right:25%;
+}
+
+
+/* ribbon */
+.ribbon {
+ font-size: 14px;
+ font-family: 'Mirza', cursive;
+ font-weight: normal;
+
+ max-width: 50%;
+    
+ position: relative;
+ background: rgba(242, 121, 128, 0.8);
+ color: #fff;
+ text-align: center;
+ padding: 0.5em 3em; /* Adjust to suit */
+ margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+
+/* 彩带左右伪选择器生成的领结花 */
+.ribbon:before, .ribbon:after {
+ content: "";
+ position: absolute;
+ display: block;
+ bottom: -1em;
+ border: 1.5em solid rgba(242, 128, 135, 0.7);
+ z-index: -1;
+}
+
+
+.ribbon:before {
+ left: -2em;
+ border-right-width: 1.5em;
+ border-left-color: transparent;
+}
+
+.ribbon:after {
+ right: -2em;
+ border-left-width: 1.5em;
+ border-right-color: transparent;
+}
+
+/* 生成领结阴影 */
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+ content: "";
+ position: absolute;
+ display: block;
+ border-style: solid;
+ border-color: #999 transparent transparent transparent;
+ bottom: -1em;
+}
+
+/* 定位阴影位置 */
+.ribbon .ribbon-content:before {
+ left: 0;
+ border-width: 1em 0 0 1em;
+}
+
+.ribbon .ribbon-content:after {
+ right: 0;
+ border-width: 1em 1em 0 0;
+}
+
+.ribbon .ribbon-content a{
+	color: #fff3f3;
+	font-weight: 2px;
+}
+
+
+/*Responive-design :width 800px*/
+@media screen and (max-width: 810px){
+
+.todo-item .todo span{
+	width: 60%;
+	text-indent:0;
+  }
+
+}
+
+@media screen and (max-width: 610px){
+
+.todo-item .todo span{
+	width: 40%;
+  }
+
+ .todo-item .todo button{
+	min-width: 40px;
+	height: 25px;
+	margin:4px 1px;
+  }
+
+
+.todo-item .todo span{
+	text-indent:0;
+}
+
+}
+
