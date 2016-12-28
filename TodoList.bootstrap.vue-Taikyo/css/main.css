@@ -1,0 +1,14 @@
+body{
+  background-color: #999;
+}
+.list-group-item{
+  font-size: 24px;
+}
+.jumbotron{
+  margin: 0 auto;
+  width: 60%;
+}
+.finshed{
+    text-decoration: line-through;
+    color: #C0C0C0
+}
