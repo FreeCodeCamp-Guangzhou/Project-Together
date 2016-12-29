@@ -12,7 +12,7 @@
 
 ## Demo  展示
 ![todolist-demo](img/todolist_demo.gif "todolist-demo")
-<img src="img/todolist_demo.gif" width = "200" height = "200" alt="todolist-demo" align=center style="box-shadow: 10px 10px 5px #ccc;"/>
+<img src="img/todolist_demo.gif" width = "1000" height = "700" alt="todolist-demo" align=center style="box-shadow: 10px 10px 5px #ccc;"/>
 
 
 ## Todo Features
