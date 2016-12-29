@@ -24,4 +24,4 @@
 ## 最后的最后
 -  请尽情pull request(不会( ⊙ o ⊙ )啊！Google first)以及raise issue(不会( ⊙ o ⊙ )啊！Google first) ,
    共同进步O(∩_∩)O！
--  todolist.vue.js将针对以上Todo Features在<a href="https://github.com/CaiYiLiang/TodoList">我的Github-todolist</a>上更新，感兴趣的小伙伴欢迎来看。 start是美德，请随手:star2: ：sun_with_face：
+-  todolist.vue.js将针对以上Todo Features在<a href="https://github.com/CaiYiLiang/TodoList">我的Github-todolist</a>上更新，感兴趣的小伙伴欢迎来看。 start是美德，请随手:star2: :sun_with_face：
