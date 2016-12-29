@@ -11,8 +11,8 @@
 -  <a href="http://www.w3schools.com/css/css3_intro.asp">CSS3</a>
 
 ## Demo  展示
-![todolist-demo](img/todolist_demo.gif "todolist-demo")
-<img src="img/todolist_demo.gif" width = "1000" height = "700" alt="todolist-demo" align=center style="box-shadow: 10px 10px 5px #ccc;"/>
+![todolist-demo](img/todolist_demo.gif =1000"todolist-demo")
+
 
 
 ## Todo Features
