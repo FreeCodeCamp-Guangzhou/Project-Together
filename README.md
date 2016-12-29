@@ -9,9 +9,8 @@
  2.   如果您不是与现有项目协作开发，而是自己写了一个小项目☆⌒(*＾-゜)v，请单独添加您的个人项目文件夹，
       文件夹命名方式可以参考现有的项目，点出项目名，使用了何种框架和github名。
  2-1. 请更新`README.md`中的对应小项目下，并添加您的个人github链接地址。
- 3.   当然，您可以联系[CaiYiLiang(樱桃妹)](https://github.com/CaiYiLiang)，[domsgit](https://github.com/domsgit)，[taikyo](https://github.com/taikyo)或者在FCC-广州群
-      里分享任何问题。
-
+ 3.   当然，您可以联系[CaiYiLiang(樱桃妹)](https://github.com/CaiYiLiang)，[domsgit](https://github.com/domsgit)，[taikyo](https://github.com/taikyo)或者在FCC-广州群里分享任何问题(Goodgle First)。
+ 4.   嗯 没有啦~\(≧▽≦)/~  快乐学习JS，没有那么多规则~\(≧▽≦)/~啦啦啦 请随手:star2:
 ## TodoList小项目
 
 [TodoList.vue.js-CaiYiLiang](https://github.com/FreeCodeCamp-Guangzhou/Project-Together/tree/master/TodoList.vue.js-CaiYiLiang) - [CaiYiLiang(樱桃妹)](https://github.com/CaiYiLiang)
