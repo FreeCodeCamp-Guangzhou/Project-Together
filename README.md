@@ -6,7 +6,7 @@
 
 - pull request前注意：
  1.   [如何pull request](https://github.com/geeeeeeeeek/git-recipes/wiki/3.3-%E5%88%9B%E5%BB%BAPull-Request)
- 2.   如果您不是与现有项目协作开发，而是自己写了一个小项目谢啦☆⌒(*＾-゜)v，请单独添加您的个人项目文件夹，
+ 2.   如果您不是与现有项目协作开发，而是自己写了一个小项目☆⌒(*＾-゜)v，请单独添加您的个人项目文件夹，
       文件夹命名方式可以参考现有的项目，点出项目名，使用了何种框架和github名。
  2-1. 请更新`README.md`中的对应小项目下，并添加您的个人github链接地址。
  3.   当然，您可以联系[CaiYiLiang(樱桃妹)](https://github.com/CaiYiLiang)，[domsgit](https://github.com/domsgit)，[taikyo](https://github.com/taikyo)或者在FCC-广州群
