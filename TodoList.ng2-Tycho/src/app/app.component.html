@@ -1,3 +1,21 @@
-<h1>
-  {{title}}
-</h1>
+<md-card class="todos">
+  <md-card-title class="title">todos</md-card-title>
+  <md-card-content>
+    <md-list>
+      <md-list-item *ngFor="let todo of todos; let idx = index;" [class.done]="todo.done">
+        <button md-mini-fab="md-mini-fab" (click)="remove(idx)" color="warn" class="delete">
+          <md-icon>clear</md-icon>
+        </button>
+        <md-checkbox (change)="toggle(todo)" [checked]="todo.done">{{todo.title}}</md-checkbox>
+      </md-list-item>
+    </md-list>
+  </md-card-content>
+  <md-card-actions>
+    <form (submit)="add(myInput.value)">
+      <md-input #myInput="" placeholder="What needs to be done?" autofocus="autofocus" name="title" [(ngModel)]="newTodoText"></md-input>
+      <button md-fab="md-fab" type="submit" color="primary">
+        <md-icon>add</md-icon>
+      </button>
+    </form>
+  </md-card-actions>
+</md-card>
