@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+.todos {
+    max-width: 300px;
+    width: 50%;
+    margin: 10% auto;
+}
+
+.title {
+   font-size: 50px;
+   font-family: 'Indie Flower';
+}
+
+.done {
+    text-decoration: line-through;
+    color: #C0C0C0;
+}
+
+.delete {
+    left: -15px;
+}
