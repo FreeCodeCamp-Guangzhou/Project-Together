@@ -1,0 +1,10 @@
+body{
+  background-color: #999;
+}
+.list-group-item{
+  font-size: 20px;
+}
+.jumbotron{
+  margin: 0 auto;
+  width: 61.8%;
+}
