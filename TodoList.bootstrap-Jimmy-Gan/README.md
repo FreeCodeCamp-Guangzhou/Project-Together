@@ -10,5 +10,11 @@
 
 #### structure of this project
 ```
-
+.
+├── index.html
+├── javascripts
+│   └── index.js
+├── README.md
+└── styles
+    └── index.css
 ```
