@@ -19,7 +19,11 @@
 
 [TodoList.bootstrap.vue-Taikyo](https://github.com/FreeCodeCamp-Guangzhou/Project-Together/tree/master/TodoList.bootstrap.vue-Taikyo) - [taikyo](https://github.com/taikyo)
 
+[TodoList.ng2-Tycho](https://github.com/FreeCodeCamp-Guangzhou/Project-Together/tree/master/TodoList.ng2-Tycho) - [Tycho](https://github.com/tycho01)
+
 [TodoList-bootstrap-Jimmy-Gan](https://github.com/Jimmy-Gan/Project-Together/tree/casejimmy) - [Jimmy-Gan](https://github.com/Jimmy-Gan)
+
+[等你来](您的github)
 
 ## 其他小项目
 
