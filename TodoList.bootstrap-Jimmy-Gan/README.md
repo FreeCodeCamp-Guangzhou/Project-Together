@@ -3,9 +3,8 @@
 ### changes made so far :
 
 ```sh
-  - change title from "Todos" to "To-Do List"
-  - use Tab instead of Enter for next list item
-  - change width from 60% to 61.8%
+  - rewrite using jQuey;
+  - grid added;
 ```
 
 #### structure of this project

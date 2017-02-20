@@ -2,25 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>todolist</title>
+  <title>To-do list</title>
   <link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./styles/index.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  <script src="./javascripts/index.js"></script>
 </head>
 
 <body>
-  <div class="container">
-    <div class="jumbotron">
-      <h1 class="todos-title text-center">To-Do List</h1>
-      <form role="form">
-        <div class="form-group form-group-lg has-success">
-	  <input autofocus type="text" class="form-control input-md" placeholder="Type here and Tab.">
-        </div>
-      </form>
-      <ul class="list-unstyled list-group"></ul>
-    </div>
+
+  <h1 class="todos-title text-center">To-Do List</h1>
+  <div>
+    <input autofocus type="text" class="input-md" placeholder="Type here and Enter.">
+      <ul class="wrapper" id="target"></ul>
   </div>
-  <script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
-  <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="./javascripts/index.js"></script>
+
 </body>
 </html>
