@@ -1,0 +1,45 @@
+html,body{
+    height: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.first-box{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    /*align-items: baseline;*/
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+[class$="box"]{
+    width: 350px;
+    /*height: 350px;*/
+    margin-right: 5px;
+    border: 1px solid;
+}
+.pip1{
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    background-color: gold;
+}
+.pip2{
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    background-color: chartreuse;
+}
+.pip3{
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    background-color: deeppink;
+}
+.pip4{
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    background-color: magenta;
+}

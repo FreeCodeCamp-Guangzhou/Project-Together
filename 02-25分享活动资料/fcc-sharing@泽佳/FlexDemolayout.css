@@ -1,0 +1,59 @@
+html,body{
+    height: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.first-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second-box{
+    display: flex;
+    justify-content: space-between;
+}
+.second-box .pip:nth-of-type(2){
+    align-self: flex-end;
+}
+.third-box{
+    display: flex;
+    justify-content: space-between;
+}
+.third-box .pip:nth-of-type(2){
+    align-self: center;
+}
+.third-box .pip:nth-of-type(3){
+    align-self: flex-end;
+}
+.fourth-box{
+    display:flex;
+    justify-content: space-between;
+}
+.fourth-box .column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.fifth-box{
+    display: flex;
+    /*justify-content: space-between;*/
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+[class$="box"]{
+    width: 120px;
+    height: 120px;
+    margin-right: 5px;
+    background-color: #e7e7e7;
+}
+.pip{
+    display: block;
+    width:24px;
+    height: 24px;
+    border-radius: 50%;
+    margin: 4px;
+    background-color: #333;
+}
